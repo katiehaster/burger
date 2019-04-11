@@ -10,15 +10,17 @@ The user is able to do 3 things -
 3) From the Devoured section, the user can click on the I Want More button and the burger will appear again on the main menu. An endless cycle of delicious - and nutrious - and hopefully creative! - burgers
 
 ## Languages / Technologies Used
-Handlebars
-HTML
-CSS
-.gitignore
-JavaScript / JQuery
-Express
-Bootstrap
-Markdown
-Heroku
+* Handlebars
+* HTML
+* CSS
+* .gitignore
+* JavaScript / JQuery
+* Express
+* Node.js
+* Bootstrap
+* Markdown
+* Heroku
+* JAWSDB
 
 ## Heroku link
 https://devour-that-yummy-burger.herokuapp.com/
