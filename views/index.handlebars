@@ -1,0 +1,126 @@
+   {{!-- <h1>Cats!</h1>
+
+<h2>Cats that are not sleepy!</h2>
+
+<ul>
+  {{#each cats}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Cats that are sleepy!</h2>
+
+<ul>
+  {{#each cats}}
+    {{#if sleepy}}
+      {{> cats/cat-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ul> --}}
+
+{{!-- <h2>Add a Cat</h2>
+<form class="create-form">
+  <div class="form-group">
+    <label for="ca">Cat Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+  <button type="submit">Add Cat</button>
+</form>  
+     
+      <form>
+        <div class="form-group">
+          <label for="burgerName">What's your burger, baby?</label>
+          <input type="input" class="form-control" id="burgerInput" aria-describedby="burgerChoiceHere"
+            placeholder="Your burger here">
+        </div>
+        <button type="submit" class="btn btn-danger" id="submitButton">Submit</button>
+      </form>
+      <br>
+      <br>
+      <div>
+        Type in whatever burger you want and click the Submit button
+      </div>
+      <br>
+      <br>
+      </div>
+    </div>
+  </div>
+</div> --}}
+
+{{!-- <main>
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div>
+              <form action="/burgers{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+      <div class="col s6">
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burgerEaten'>
+              <div>
+                {{this.burger_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<h2>Add A Burger Option</h2>
+
+<div class="row">
+  <div class="col s12">
+    <form action="/burgers" method="POST">
+      <input type="text" id="name" name="burger_name" placeholder="">
+      <button type="submit" class="addBurgerButton">Add The Burger</button>
+    </form>
+  </div>
+</div> --}}
+
+<h2>Delicious Burgers!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burgers-block canEat=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Only crumbs left, kid</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burgers-block canEat=false}}
+    {{/if}}
+  {{/each}}
+</ul> 
+
+{{!-- Add burgers --}}
+<form>
+  <div class="form-group">
+    <label for="burgerName">What's your burger, baby?</label>
+    <input type="input" class="form-control" id="burgerInput" aria-describedby="burgerChoiceHere"
+      placeholder="Your burger here">
+  </div>
+  <button type="submit" class="btn btn-danger" id="submitButton">Submit</button>
+</form>
+<br>
+<br>
+<div>
+  Type in whatever burger you want and click the Submit button
+</div>
