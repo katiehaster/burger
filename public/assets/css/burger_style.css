@@ -1,10 +1,17 @@
+body {background-image: url("https://ak4.picdn.net/shutterstock/videos/17538484/thumb/1.jpg");
+background-size: cover;
+color: white;
+padding-left: 15px;
+}
 
+h1 {
+   color:red;
+  
 
-#burgerCreate {
-    background-color: darkgoldenrod
 }
 
 
-#burgerDevour {
-    background-color: olive;
+h2 {
+   color: olive;
+    
 }
