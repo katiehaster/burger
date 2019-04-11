@@ -90,7 +90,9 @@
   </div>
 </div> --}}
 
-<h2>Delicious Burgers!</h2>
+<h1>BURGER TIME!</h1>
+<br>
+<h2>BURGERS:</h2>
 
 <ul>
   {{#each burgers}}
@@ -99,8 +101,8 @@
     {{/unless}}
   {{/each}}
 </ul>
-
-<h2>Only crumbs left, kid</h2>
+<br>
+<h2>WE'RE ALL OUT: </h2>
 
 <ul>
   {{#each burgers}}
@@ -109,18 +111,15 @@
     {{/if}}
   {{/each}}
 </ul> 
-
+<br>
 {{!-- Add burgers --}}
-<form>
+<form action="/api/burgers" method="POST">
   <div class="form-group">
     <label for="burgerName">What's your burger, baby?</label>
-    <input type="input" class="form-control" id="burgerInput" aria-describedby="burgerChoiceHere"
+    <input type="input" class="form-control" name="burger_name" devoured="0" id="ca" aria-describedby="burgerChoiceHere"
       placeholder="Your burger here">
   </div>
   <button type="submit" class="btn btn-danger" id="submitButton">Submit</button>
 </form>
-<br>
-<br>
-<div>
-  Type in whatever burger you want and click the Submit button
-</div>
+
+{{!-- Erorr: front end not passing the data through to back end. Check form  --}}
