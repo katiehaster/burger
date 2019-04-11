@@ -21,6 +21,8 @@ The user is able to do 3 things -
 * Markdown
 * Heroku
 * JAWSDB
+* MySQL
+* ORM
 
 ## Heroku link
 https://devour-that-yummy-burger.herokuapp.com/
