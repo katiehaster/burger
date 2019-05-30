@@ -32,6 +32,3 @@ https://github.com/katiehaster/burger
 
 ## Author
 Katie Haster
-
-## Feedback
-At this time the app is not finished - the styling can be improved, and there is a hiccup when the user clicks submit - they are re-directed to a new page. This will be fixed very soon and I will update this section of the readme. However - the new burger DOES display on the page - a simple refresh is all that's needed.
